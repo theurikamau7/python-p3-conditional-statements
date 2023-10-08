@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from __future__ import print_function
+
+
 # 1. admin login 
 def admin_login(username, password):
     if username == "sudo" and password == "12345":
@@ -35,14 +38,15 @@ def fizzbuzz(num):
 
 # 4. Calculator
 def calculator(operation, num1, num2):
-    if operation == "+" :
+    if operation == "+":
         return num1 + num2
     elif operation == "-":
         return num1 - num2
     elif operation == "*":
-        return num1*num2
+        return num1 * num2
     elif operation == "/":
-        return num1/num2
+        return num1 / num2
     else:
         print("Invalid operation!")
         return None
+
